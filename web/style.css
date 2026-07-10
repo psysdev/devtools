@@ -66,6 +66,43 @@ body::before {
   z-index: 1;
 }
 
+/* ── Content Wrapper (main + footer) ──────── */
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* ── App Footer ───────────────────────────── */
+.app-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-card);
+  font-family: var(--mono);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.app-footer a {
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.app-footer a:hover {
+  color: var(--accent);
+}
+
+.footer-sep {
+  color: var(--border-light);
+  font-size: 10px;
+}
+
 /* ── Sidebar ─────────────────────────────────── */
 .sidebar {
   width: 240px;
@@ -143,6 +180,7 @@ body::before {
   padding: 40px 48px;
   overflow-y: auto;
   max-width: 1200px;
+  min-height: 0;
 }
 
 /* ── Tool Content ────────────────────────────── */

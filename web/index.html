@@ -12,17 +12,26 @@
         <nav class="sidebar" id="sidebar">
             <!-- Sidebar header is rendered by app.js (with click-to-home) -->
         </nav>
-        <main class="main-content" id="tool-content">
-            <div style="display:flex;align-items:center;justify-content:center;height:300px;color:var(--text-dim)">
-                <div style="text-align:center">
-                    <div style="font-size:48px;margin-bottom:16px;color:var(--accent)">⚡</div>
-                    <div style="font-family:var(--mono);font-size:14px">Loading tools...</div>
-                    <div style="font-family:var(--mono);font-size:12px;color:var(--text-dim);margin-top:8px">
-                        <span class="terminal-line">devtool --serve</span>
+        <div class="content-wrapper">
+            <main class="main-content" id="tool-content">
+                <div style="display:flex;align-items:center;justify-content:center;height:300px;color:var(--text-dim)">
+                    <div style="text-align:center">
+                        <div style="font-size:48px;margin-bottom:16px;color:var(--accent)">⚡</div>
+                        <div style="font-family:var(--mono);font-size:14px">Loading tools...</div>
+                        <div style="font-family:var(--mono);font-size:12px;color:var(--text-dim);margin-top:8px">
+                            <span class="terminal-line">devtool --serve</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </main>
+            </main>
+            <footer class="app-footer">
+                <a href="https://psys.dev" target="_blank" rel="noopener noreferrer">psys.dev</a>
+                <span class="footer-sep">·</span>
+                <a href="https://github.com/psysdev" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <span class="footer-sep">·</span>
+                <a href="https://x.com/psysdev" target="_blank" rel="noopener noreferrer">@psysdev</a>
+            </footer>
+        </div>
     </div>
     <script src="/app.js"></script>
 </body>
