@@ -1,0 +1,17 @@
+# ── devtools — Docker Compose ─────────────────────────────────────
+# One-command deploy: docker compose up -d
+
+version: "3.9"
+
+services:
+  devtools:
+    build: .
+    container_name: devtools
+    ports:
+      - "${PORT:-8080}:8080"
+    environment:
+      - PORT=8080
+    restart: unless-stopped
+    # Optional: mount local git repos for archeo tool
+    # volumes:
+    #   - /path/to/projects:/projects:ro

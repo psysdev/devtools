@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devtools — Developer Toolbox</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='16,2 30,16 16,30 2,16' fill='%237C3AED'/><polygon points='16,7 25,16 16,25 7,16' fill='%230a0a0f'/><polygon points='16,12 20,16 16,20 12,16' fill='%237C3AED'/></svg>">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar" id="sidebar">
+            <!-- Sidebar header is rendered by app.js (with click-to-home) -->
+        </nav>
+        <main class="main-content" id="tool-content">
+            <div style="display:flex;align-items:center;justify-content:center;height:300px;color:var(--text-dim)">
+                <div style="text-align:center">
+                    <div style="font-size:48px;margin-bottom:16px;color:var(--accent)">⚡</div>
+                    <div style="font-family:var(--mono);font-size:14px">Loading tools...</div>
+                    <div style="font-family:var(--mono);font-size:12px;color:var(--text-dim);margin-top:8px">
+                        <span class="terminal-line">devtool --serve</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
